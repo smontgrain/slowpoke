@@ -2,12 +2,10 @@
 #'
 #' @param grouping_var A column to group by (unquoted).
 #' @return A tibble with counts of each rarity by group.
-#' @importFrom dplyr count
+#' @importFrom dplyr count group_by mutate pivot_wider
 #' @importFrom tidyr pivot_wider
 #' @export
-rarity_by_release <- function(grouping_var) {
-
-  dat <- load_data()
+rarity_by_release <- function(grouping_var, dat = load_data()) {
 
   dat |>
     count({{grouping_var}}, rarity) |>

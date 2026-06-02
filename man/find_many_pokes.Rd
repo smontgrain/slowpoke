@@ -4,7 +4,7 @@
 \alias{find_many_pokes}
 \title{Find multiple Pokémon by name patterns}
 \usage{
-find_many_pokes(poke_names)
+find_many_pokes(poke_names, dat = load_data())
 }
 \arguments{
 \item{poke_names}{A character vector of name patterns.}

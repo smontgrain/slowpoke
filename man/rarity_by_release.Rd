@@ -4,7 +4,7 @@
 \alias{rarity_by_release}
 \title{Count card rarity by grouping variable}
 \usage{
-rarity_by_release(grouping_var)
+rarity_by_release(grouping_var, dat = load_data())
 }
 \arguments{
 \item{grouping_var}{A column to group by (unquoted).}
